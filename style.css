@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  font-family: "Gayathri", sans-serif;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background-color: cadetblue;
+}
+
+header {
+  margin-left: 20px;
+  text-align: center;
+}
+
+/********************** Grid Container ************************/
+
+.grid-container {
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  margin-left: 25px;
+}
+
+.card {
+  display: flex;
+  border: slategray solid 1px;
+  border-radius: 20px;
+  margin: 10px;
+  background-color: white;
+}
+
+.card:hover {
+  background-color: coral;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.text-container {
+  padding-left: 20px;
+}
+
+/************************* Overlay ****************************/
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.modal {
+  width: 375px;
+  margin: 15% auto auto;
+  position: relative;
+  text-align: center;
+  background: white;
+  border: 1px sold #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/************************* Media ***********************/
+
+@media (min-width: 768px) {
+  .column {
+    width: 30%;
+    float: left;
+    padding: 5px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
